@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .wrapper {
+        @apply w-[90%] text-center mx-auto;
+    }
+
+    /* Clases para el diseño de un crud */
+    .crudLabel {
+        @apply inline-block w-40 text-white/85;
+    }
+    .crudInput1 {
+        @apply bg-black border-white/50 border-2 rounded-sm px-1 text-lg w-72;
+    }
+    .crudInput {
+        @apply h-10 bg-black border-white/50 border-2 rounded-sm px-1 text-lg w-96;
+    }
+
+    .crudForm {
+        @apply bg-black/25 p-6 border-white/50 border-2 rounded-lg shadow-xl shadow-white/25 font-text space-y-6 text-2xl;
+    }
+
+    .crudButton {
+        @apply text-xl transition-all py-1 px-2 rounded-md bg-amber-600 hover:bg-amber-700 font-serif focus:shadow-inner focus:shadow-black/75;
+    }
+
+}

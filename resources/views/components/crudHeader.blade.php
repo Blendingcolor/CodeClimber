@@ -1,0 +1,1 @@
+<th class="border-2 p-2">{{$nombreHeader}}</th>

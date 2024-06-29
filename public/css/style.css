@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --color_web: #FFFF44;/*#FFFF44  652DD1*/
+    --color_titulo: #4c4c4c2a;
+    --color_green: hsla(0, 0%, 100%, .1);
+    --color_blanco: white;
+    --color_placeholder: rgb(101, 101, 101);
+    --fuente_txt_decoration: "Roboto Slab", serif;
+    --fuente_normal: "Roboto", sans-serif;
+    --color_negro: black;
+    
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--color_blanco);
+    font-family: var(--fuente_normal);
+}
+
+/*Public*/
+html{
+    height: 100vh;
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*Variables globale*/
+.displayFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tamañoXciento{
+    width: 100%;
+    height: 100%;
+}
+.btnInput{
+    border: none;
+    width: 85%;
+    border-radius: 25px;
+    height: 4.2rem;
+    background-color: var(--color_green);
+    margin: 0.5rem 0;
+    outline: none;
+}
+/*-----------------------------------------------------*/
+/*Logo*/
+.contentNav{
+    position: fixed;
+    z-index: 1;
+    margin: 1rem;
+
+}
+.navLogo{
+    color: var(--color_web);
+    font-size: xx-large;
+}
+
+/*Formulario*/
+.contentMnainLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+.contentMnainLogin section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.contentLeft{
+    flex-direction: column;
+    border-right: 5px solid var(--color_green);
+    border-radius: 10%;
+}
+.leftTitulo{
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    color: var(--color_blanco);
+}
+.contentForm{
+    width: 100%;
+}
+.formForm{
+    flex-direction: column;
+}
+.formContentInput{
+    width: 100%;
+    text-align: center;
+}
+
+.formContentInput input:last-child{
+    padding-left: 1rem;
+    font-size: larger;
+}
+.formContentInput .inputFecha{
+    padding-right: 1rem;
+}
+.formContentInput .inputFecha[type='date']{
+    color: var(--color_placeholder);
+}
+.formContentInput .inputFecha[type='date']::-webkit-calendar-picker-indicator{
+    background-color: var(--color_web);
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.formContentInput .inputFecha[type='date']::-webkit-calendar-picker-indicator:hover{
+    padding: 0.6rem;
+}
+.formContentInput a{
+    color: var(--color_web);
+}
+::placeholder{
+    color: var(--color_placeholder);
+}
+.formContentInput .btn{
+    background-color: var(--color_web);
+    color: var(--color_negro);
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.formContentInput .btn:hover{
+    color: var(--color_placeholder);
+}
+.contentLeftFooter{
+    flex-direction: column;
+    width: 100%;
+}
+.FooterLogos_web{
+    width: 40%;
+    justify-content: space-around;
+}
+.FooterLogos_web i{
+    font-size: 2.5rem;
+    color: var(--color_blanco);
+}
+.FooterLogos_web i:hover{
+    color: var(--color_placeholder);
+}
+.contentLeftFooter a{
+    color: var(--color_web);
+}
+@media (max-width: 900px) {
+    .contentLeft{
+        border:none;
+    }
+    #contentRight{
+        display: none;
+    }
+    .contentRight{
+        display: none;
+    } 
+}
+
+/*Examen nivel*/
+.contentProgress{
+    width: 100%;
+    text-align: center;
+}
+.contentProgress meter{
+    width: 95%;
+    height: 4rem;
+}
+/*-------------------------------------------------------*/
+.contentExamenNivel{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.examenNivelPart{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.examenNivelTitulo{
+    color: var(--color_web);
+    font-size: xx-large;
+}
+.examenNivelPartPregunta{
+    width: 50%;
+    font-size: x-large;
+}
+.contentOptions{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+}
+.contentOptions .option{
+    height: 10rem;
+    border-radius: 10px;
+    background-color: var(--color_green);
+}
+.contentOptions .option:hover{
+    animation:shake-horizontal 0.8s linear both} @keyframes shake-horizontal{0%,100%{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-10px)}20%,40%,60%{transform:translateX(10px)}80%{transform:translateX(8px)}90%{transform:translateX(-8px)}
+}
+iframe{
+    border-radius: 10px;
+    width: 95%;
+    height: 95%;
+}
+.verificarCorreo{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://w.wallhaven.cc/full/mp/wallhaven-mplo19.jpg);
+    /* El pep: https://w.wallhaven.cc/full/jx/wallhaven-jxyopy.png */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* background: transparent  center/cover no-repeat fixed; */
+}
+.verificarCorreoSombra{
+    height: 100%;
+    width: 100%;
+    background: rgb(2,0,40);
+    background: rgb(0,0,0);
+    background: linear-gradient(265deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.9) 27%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.6) 57%, rgba(0,0,0,0.6) 73%, rgba(0,0,0,0.5) 84%, rgba(0,0,0,0.4) 98%);
+}
+.taget{
+    backdrop-filter: blur(2.2px);
+    background-image: linear-gradient(45deg, rgba(32,152,255,0.02), rgba(172,50,249,0.02));
+}

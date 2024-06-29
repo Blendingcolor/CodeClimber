@@ -1,0 +1,42 @@
+body {
+    background-image: url("../images/ContentFont.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+    opacity: 75;
+    margin: 0;
+}
+@layer utilities {
+    .hover\:stroke-width-2:hover {
+        stroke-width: 2;
+    }
+}
+/* Estilos para la ventana emergente de video */
+.video-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 50px 40px 50px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-popup iframe {
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.video-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    z-index: 1100; 
+}
