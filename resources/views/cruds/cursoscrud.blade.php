@@ -9,7 +9,6 @@
 @section('insertar')
     <x-crudInsertCourses/>
 @endsection
-adasdasd
 @section('columnas')
     <x-crudHeader class=" border-b-[2px] text-[1.2rem] border-[#424141] rounded-tl-[0.8rem]">Nombre</x-crudHeader>
     <x-crudHeader class=" border-b-[2px] text-[1.2rem] border-[#424141] ">Descripcion</x-crudHeader>
